@@ -12,6 +12,8 @@ npm install -g alibabacloud-dataworks-mcp-server
 
 ### For Cursor / Cline / MCP-compatible clients
 
+Option A — Static AK/SK:
+
 ```json
 {
   "mcpServers": {
@@ -28,16 +30,36 @@ npm install -g alibabacloud-dataworks-mcp-server
 }
 ```
 
+Option B — Credentials URI (recommended for local development):
+
+```json
+{
+  "mcpServers": {
+    "alibabacloud-dataworks-mcp-server": {
+      "command": "npx",
+      "args": ["alibabacloud-dataworks-mcp-server"],
+      "env": {
+        "REGION": "cn-shanghai",
+        "ALIBABA_CLOUD_CREDENTIALS_URI": "http://localhost:7002/api/v1/credentials/0"
+      }
+    }
+  }
+}
+```
+
 ### Environment Variables
 
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `REGION` | Yes | DataWorks API region (e.g. `cn-shanghai`) |
-| `ALIBABA_CLOUD_ACCESS_KEY_ID` | Yes | Alibaba Cloud Access Key ID |
-| `ALIBABA_CLOUD_ACCESS_KEY_SECRET` | Yes | Alibaba Cloud Access Key Secret |
+| `ALIBABA_CLOUD_CREDENTIALS_URI` | No* | Credentials URI endpoint for dynamic AK/SK/STS token |
+| `ALIBABA_CLOUD_ACCESS_KEY_ID` | No* | Alibaba Cloud Access Key ID |
+| `ALIBABA_CLOUD_ACCESS_KEY_SECRET` | No* | Alibaba Cloud Access Key Secret |
 | `TOOL_CATEGORIES` | No | Comma-separated category filter |
 | `TOOL_NAMES` | No | Comma-separated API name filter |
 | `TOOL_FILE_URI` | No | Local file URI for tools metadata (overrides remote) |
+
+\* Provide either `ALIBABA_CLOUD_CREDENTIALS_URI` or both `ALIBABA_CLOUD_ACCESS_KEY_ID` + `ALIBABA_CLOUD_ACCESS_KEY_SECRET`.
 
 ### Tool Categories
 

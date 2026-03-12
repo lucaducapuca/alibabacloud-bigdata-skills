@@ -38,9 +38,14 @@ alibabacloud-bigdata-skills/
 3. Set up credentials:
 
 ```bash
-export ALICLOUD_ACCESS_KEY_ID="your-ak"
-export ALICLOUD_ACCESS_KEY_SECRET="your-sk"
-export ALICLOUD_REGION_ID="cn-shanghai"
+# Option A: Credentials URI (recommended for local development)
+export ALIBABA_CLOUD_CREDENTIALS_URI="http://localhost:7002/api/v1/credentials/0"
+
+# Option B: Static AK/SK
+export ALIBABA_CLOUD_ACCESS_KEY_ID="your-ak"
+export ALIBABA_CLOUD_ACCESS_KEY_SECRET="your-sk"
+
+export ALIBABA_CLOUD_REGION_ID="cn-shanghai"
 ```
 
 4. Use the discovery scripts to explore available APIs:
