@@ -22,8 +22,8 @@ Option A — Static AK/SK:
       "args": ["alibabacloud-dataworks-mcp-server"],
       "env": {
         "REGION": "cn-shanghai",
-        "ALIBABA_CLOUD_ACCESS_KEY_ID": "your_access_key_id",
-        "ALIBABA_CLOUD_ACCESS_KEY_SECRET": "your_access_key_secret"
+        "ALIBABA_CLOUD_ACCESS_KEY_ID": "<YOUR_ACCESS_KEY_ID>",
+        "ALIBABA_CLOUD_ACCESS_KEY_SECRET": "<YOUR_ACCESS_KEY_SECRET>"
       }
     }
   }
